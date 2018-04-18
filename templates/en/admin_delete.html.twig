@@ -1,0 +1,15 @@
+{# empty Twig template #}
+{% extends "en/admin_master.html.twig" %}
+
+{% block title %} User delete {% endblock %}
+
+{% block title_extra %} User delete {% endblock %}
+
+{% block content %}
+ 
+    <form method="post">
+        User Name: <input type="text" name="name" value="{{u.name}}"><br><br>
+        <input type="submit" value="Delete User">
+    </form>    
+ 
+{% endblock %}
